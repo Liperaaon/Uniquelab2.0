@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco | UNIQUELAB</title>
+
+    <meta name="description" content="Faça parte da equipe UNIQUELAB. Envie seu currículo e venha construir o futuro do diagnóstico de alta precisão conosco.">
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#020617',
+                            gold: '#C5A059',
+                            'gold-light': '#E2C792',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --brand-blue: #020617;
+        --brand-gold: #C5A059;
+        --brand-gold-light: #E2C792;
+        --bg-off-white: #F8F9FA;
+    }
+
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--bg-off-white);
+        color: var(--brand-blue);
+        line-height: 1.6;
+    }
+
+    .font-serif { font-family: 'Playfair Display', serif; }
+
+    /* Header Transitions - Glassmorphism suave */
+    header.scrolled {
+        background: rgba(2, 6, 23, 0.95);
+        backdrop-filter: blur(15px);
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Inputs customizados */
+    .input-field {
+        width: 100%;
+        background: transparent;
+        border: 1px solid rgba(2, 6, 23, 0.1);
+        border-radius: 0.5rem;
+        padding: 1rem 1.25rem;
+        color: var(--brand-blue);
+        transition: all 0.3s ease;
+        font-size: 0.875rem;
+    }
+    
+    .input-field:focus {
+        outline: none;
+        border-color: var(--brand-gold);
+        box-shadow: 0 0 0 1px var(--brand-gold);
+        background: white;
+    }
+
+    .input-field::placeholder {
+        color: rgba(2, 6, 23, 0.4);
+    }
+
+    /* Animação de Revelação */
+    .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+<link rel="icon" type="image/jpg" href="https://i.postimg.cc/43rfZRsz/Whats-App-Image-2026-03-12-at-11-46-30.jpg">
+</head>
+<body class="overflow-x-hidden flex flex-col min-h-screen">
+
+    <!-- Header Simplificado (Foco em voltar para a Home) -->
+    <header id="main-header" class="fixed top-0 w-full z-[100] transition-all duration-500 py-4 md:py-6 bg-[#020617]/95 backdrop-blur-md border-b border-white/5">
+        <div class="container mx-auto px-4 md:px-12 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center group relative z-[110]">
+                <img src="https://i.postimg.cc/43rfZRsz/Whats-App-Image-2026-03-12-at-11-46-30.jpg" alt="UNIQUELAB Logo" class="h-8 md:h-12 rounded-sm brightness-110">
+                <div class="hidden sm:flex flex-col leading-none ml-3 md:ml-4">
+                    <span class="text-white text-base md:text-lg font-bold tracking-[0.2em] uppercase">UNIQUELAB</span>
+                    <span class="text-brand-gold text-[8px] md:text-[10px] tracking-[0.3em] uppercase mt-1">Diagnósticos</span>
+                </div>
+            </a>
+
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-white/70 hover:text-brand-gold text-[10px] font-bold uppercase tracking-widest transition-colors flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                    Voltar ao Site
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section da Página -->
+    <section class="relative pt-40 pb-20 bg-[#020617] overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#020617]/80 via-[#020617]/60 to-[#F8F9FA] z-10"></div>
+            <img src="https://i.postimg.cc/cCdVN0kh/Chat-GPT-Image-12-de-mar-de-2026-23-14-59.png" class="w-full h-full object-cover object-center opacity-40" alt="Fundo Laboratório">
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-16 relative z-20 text-center">
+            <div class="flex items-center justify-center gap-4 mb-6 reveal">
+                <div class="w-8 h-[1px] bg-brand-gold"></div>
+                <span class="text-brand-gold text-[10px] font-bold uppercase tracking-[0.5em]">Carreiras</span>
+                <div class="w-8 h-[1px] bg-brand-gold"></div>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-serif text-white leading-tight mb-6 reveal drop-shadow-lg" style="transition-delay: 100ms;">
+                Faça parte da <br>
+                <span class="italic text-brand-gold font-light">Nossa Equipe.</span>
+            </h1>
+
+            <p class="text-gray-300 md:text-lg max-w-2xl mx-auto font-light leading-relaxed reveal" style="transition-delay: 200ms;">
+                Buscamos profissionais apaixonados por saúde, precisão e inovação. Se você deseja construir o futuro do diagnóstico laboratorial, seu lugar é na UNIQUELAB.
+            </p>
+        </div>
+    </section>
+
+    <!-- Formulário Section -->
+    <section class="py-16 md:py-24 bg-[#F8F9FA] flex-grow relative z-10 -mt-10">
+        <div class="container mx-auto px-6 lg:px-16 max-w-4xl">
+            
+            <div class="bg-white rounded-3xl shadow-[0_20px_50px_-15px_rgba(0,0,0,0.05)] border border-gray-100 p-8 md:p-12 reveal">
+                
+                <div id="success-message" class="hidden text-center py-12">
+                    <div class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <h3 class="text-3xl font-serif text-brand-blue mb-4">Candidatura Enviada!</h3>
+                    <p class="text-gray-500 mb-8 max-w-md mx-auto">Agradecemos o seu interesse em fazer parte da UNIQUELAB. Nosso time de Recursos Humanos analisará seu perfil e entrará em contato.</p>
+                    <button onclick="window.location.reload()" class="border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] transition-all">Enviar outra candidatura</button>
+                </div>
+
+                <form id="career-form" class="space-y-6">
+                    <h3 class="text-xl font-bold text-brand-blue mb-8 border-b border-gray-100 pb-4">Dados Pessoais</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1">Nome Completo *</label>
+                            <input type="text" required class="input-field" placeholder="Ex: João da Silva">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1">E-mail *</label>
+                            <input type="email" required class="input-field" placeholder="joao@email.com">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1">Telefone / WhatsApp *</label>
+                            <input type="tel" required class="input-field" placeholder="(00) 00000-0000">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1">Área de Interesse *</label>
+                            <select required class="input-field bg-white cursor-pointer appearance-none">
+                                <option value="" disabled selected>Selecione uma área...</option>
+                                <option value="coleta">Enfermagem / Coleta</option>
+                                <option value="laboratorio">Análises Clínicas / Laboratório</option>
+                                <option value="atendimento">Atendimento / Recepção</option>
+                                <option value="administrativo">Administrativo / Financeiro</option>
+                                <option value="ti">Tecnologia da Informação</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1">Link do LinkedIn (Opcional)</label>
+                        <input type="url" class="input-field" placeholder="https://linkedin.com/in/seu-perfil">
+                    </div>
+
+                    <div class="pt-4">
+                        <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1">Carta de Apresentação / Mensagem</label>
+                        <textarea rows="4" class="input-field resize-none" placeholder="Conte-nos um pouco sobre você e por que deseja trabalhar na UNIQUELAB..."></textarea>
+                    </div>
+
+                    <!-- Área de Upload de Currículo Customizada -->
+                    <div class="pt-6">
+                        <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2 ml-1">Anexar Currículo (PDF ou DOCX) *</label>
+                        
+                        <div class="relative group cursor-pointer">
+                            <input type="file" id="cv-upload" accept=".pdf,.doc,.docx" required class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
+                            
+                            <div id="upload-box" class="w-full border-2 border-dashed border-gray-300 rounded-xl p-8 text-center transition-all duration-300 group-hover:border-brand-gold group-hover:bg-brand-gold/5 flex flex-col items-center justify-center">
+                                <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 mb-3 group-hover:text-brand-gold group-hover:bg-white transition-colors">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                                </div>
+                                <p id="upload-text" class="text-sm text-gray-500 font-medium">Clique para selecionar ou arraste seu arquivo aqui</p>
+                                <p class="text-xs text-gray-400 mt-1">Tamanho máximo: 5MB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 text-center">
+                        <button type="submit" id="submit-btn" class="inline-flex items-center justify-center gap-3 bg-brand-gold text-brand-blue px-10 py-4 rounded-xl font-bold uppercase tracking-[0.2em] text-[10px] hover:scale-[1.02] transition-all duration-300 shadow-[0_10px_20px_-5px_rgba(197,160,89,0.4)] w-full md:w-auto min-w-[250px]">
+                            <span>Enviar Candidatura</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Idêntico ao Principal -->
+    <footer class="bg-[#020617] pt-24 pb-12 border-t border-brand-gold/20 relative overflow-hidden mt-auto">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1px] bg-gradient-to-r from-transparent via-brand-gold/40 to-transparent"></div>
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[250px] bg-brand-gold opacity-[0.04] blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 lg:px-16 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-16 lg:gap-8 mb-20 text-left">
+                
+                <div class="lg:col-span-4">
+                    <a href="index.html" class="flex items-center group mb-10 transition-transform duration-500 hover:translate-x-1">
+                        <img src="https://i.postimg.cc/43rfZRsz/Whats-App-Image-2026-03-12-at-11-46-30.jpg" alt="UNIQUELAB Logo" class="h-10 rounded-sm brightness-125">
+                        <div class="flex flex-col leading-none ml-4">
+                            <span class="text-white text-lg font-bold tracking-[0.2em] uppercase">UNIQUELAB</span>
+                            <span class="text-brand-gold text-[9px] tracking-[0.3em] uppercase mt-1">Diagnósticos</span>
+                        </div>
+                    </a>
+                    <p class="text-gray-300 font-light leading-relaxed mb-8 max-w-xs text-sm">
+                        A convergência entre alta tecnologia e medicina de precisão, desenhada para uma experiência única em saúde.
+                    </p>
+                    
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/uniquelab.exames?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                           target="_blank" 
+                           class="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-brand-blue hover:bg-brand-gold hover:border-brand-gold transition-all duration-500 shadow-lg">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://wa.me/5511989464879" 
+                           target="_blank" 
+                           class="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:bg-[#25D366] hover:border-[#25D366] transition-all duration-500 shadow-lg">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-3 lg:col-start-6">
+                    <h5 class="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-10">Explorar</h5>
+                    <ul class="space-y-4">
+                        <li><a href="index.html#sobre" class="text-gray-400 font-light hover:text-white hover:translate-x-2 transition-all duration-300 inline-block text-sm">Quem Somos</a></li>
+                        <li><a href="index.html#exames" class="text-gray-400 font-light hover:text-white hover:translate-x-2 transition-all duration-300 inline-block text-sm">Portfólio de Exames</a></li>
+                        <li><a href="index.html#unidades" class="text-gray-400 font-light hover:text-white hover:translate-x-2 transition-all duration-300 inline-block text-sm">Nossas Unidades</a></li>
+                        <li><a href="index.html#contato" class="text-gray-400 font-light hover:text-white hover:translate-x-2 transition-all duration-300 inline-block text-sm">Canais de Contato</a></li>
+                        <li><a href="trabalhe-conosco.html" class="text-brand-gold font-light hover:text-brand-gold hover:translate-x-2 transition-all duration-300 inline-block text-sm">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-4 lg:col-start-9">
+                    <h5 class="text-white text-[10px] uppercase tracking-[0.4em] font-bold mb-10">Atendimento Privado</h5>
+                    <div class="space-y-8">
+                        <a href="https://wa.me/5511989464879" target="_blank" class="group flex items-center gap-5">
+                            <div class="w-12 h-12 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-brand-blue transition-all duration-500">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            </div>
+                            <div>
+                                <span class="block text-gray-400 text-[8px] uppercase tracking-[0.3em] mb-1">Concierge Digital</span>
+                                <span class="text-white font-bold tracking-wider text-sm group-hover:text-brand-gold transition-colors">(11) 98946-4879</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:contato@uniquelabdiagnosticos.com" class="group flex items-center gap-5 text-left text-sm">
+                            <div class="w-12 h-12 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-brand-blue transition-all duration-500">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0l-9.75 6.75L3 6.75"/></svg>
+                            </div>
+                            <div>
+                                <span class="block text-gray-400 text-[8px] uppercase tracking-[0.3em] mb-1">E-mail Institucional</span>
+                                <span class="text-white font-bold tracking-wider group-hover:text-brand-gold transition-colors text-xs">contato@uniquelabdiagnosticos.com</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/10 text-[8px] text-gray-500 uppercase tracking-[0.3em] text-center md:text-left">
+                <p>© 2026 UNIQUELAB — Diagnósticos de Alta Precisão.</p>
+                <p class="mt-6 md:mt-0 flex items-center gap-3">
+                    Signature by
+                    <a href="#" class="font-bold text-gray-300 hover:text-white transition-colors tracking-[0.4em]">Prime Studios</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animações de Revelação (Scroll)
+        function reveal() {
+            document.querySelectorAll(".reveal").forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+                    el.classList.add("active");
+                }
+            });
+        }
+        window.addEventListener("scroll", reveal);
+        setTimeout(reveal, 100); // Executa ao carregar
+
+        // Lógica do Input de Arquivo (Currículo)
+        const fileInput = document.getElementById('cv-upload');
+        const uploadText = document.getElementById('upload-text');
+        const uploadBox = document.getElementById('upload-box');
+
+        fileInput.addEventListener('change', function(e) {
+            if (e.target.files.length > 0) {
+                const fileName = e.target.files[0].name;
+                uploadText.innerHTML = `<span class="text-brand-gold font-bold">Arquivo selecionado:</span> <br> ${fileName}`;
+                uploadBox.classList.add('border-brand-gold', 'bg-brand-gold/5');
+            } else {
+                uploadText.textContent = 'Clique para selecionar ou arraste seu arquivo aqui';
+                uploadBox.classList.remove('border-brand-gold', 'bg-brand-gold/5');
+            }
+        });
+
+// ENVIO REAL PARA O FIREBASE
+        document.getElementById('career-form').addEventListener('submit', async function(e) {
+            e.preventDefault(); // Impede o recarregamento da página
+
+            const btn = document.getElementById('submit-btn');
+            const originalText = btn.innerHTML;
+            
+            // Estado de "Carregando" no botão
+            btn.innerHTML = '<svg class="animate-spin w-5 h-5 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> <span>Enviando...</span>';
+            btn.classList.add('opacity-80', 'cursor-not-allowed');
+
+            try {
+                // 1. Captura todos os dados que o candidato digitou
+                const formElements = this.elements;
+                const fileInput = document.getElementById('cv-upload');
+                
+                const candidatoData = {
+                    name: formElements[0].value,
+                    email: formElements[1].value,
+                    phone: formElements[2].value,
+                    area: formElements[3].options[formElements[3].selectedIndex].text,
+                    linkedin: formElements[4].value,
+                    message: formElements[5].value,
+                    fileName: fileInput.files.length > 0 ? fileInput.files[0].name : 'Sem anexo',
+                    createdAt: window.serverTimestamp ? window.serverTimestamp() : new Date().toISOString()
+                };
+
+                // 2. Define o caminho do banco de dados (o mesmo usado no admin)
+                const appId = 'uniquelab-admin-local';
+
+                // 3. Salva no Firebase
+                await window.addDoc(window.collection(window.db, 'artifacts', appId, 'public', 'data', 'resumes'), candidatoData);
+
+                // 4. Sucesso! Mostra a mensagem de agradecimento
+                document.getElementById('career-form').classList.add('hidden');
+                document.getElementById('success-message').classList.remove('hidden');
+                document.getElementById('success-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            } catch (error) {
+                console.error("Erro ao salvar no banco:", error);
+                alert("Ops! Ocorreu um erro ao enviar sua candidatura. Tente novamente.");
+                
+                // Restaura o botão se der erro
+                btn.innerHTML = originalText;
+                btn.classList.remove('opacity-80', 'cursor-not-allowed');
+            }
+        });
+    </script>
+
+<div class="lg:hidden fixed bottom-0 left-0 w-full z-[90] bg-brand-blue/90 backdrop-blur-lg border-t border-brand-gold/20 p-4 flex gap-4 shadow-[0_-10px_30px_rgba(0,0,0,0.3)]">
+    <a href="https://wa.me/5511989464879" class="flex-1 bg-brand-gold text-brand-blue text-center py-3 rounded-xl font-bold uppercase tracking-widest text-[10px] shadow-lg active:scale-95 transition-transform">
+        Agendar WhatsApp
+    </a>
+    <a href="#resultados" class="flex-1 border border-brand-gold text-brand-gold text-center py-3 rounded-xl font-bold uppercase tracking-widest text-[10px] active:scale-95 transition-transform">
+        Resultados
+    </a>
+</div>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+        apiKey: "SUA_API_KEY_AQUI",
+        authDomain: "seu-projeto.firebaseapp.com",
+        projectId: "seu-projeto",
+        storageBucket: "seu-projeto.appspot.com",
+        messagingSenderId: "123456789",
+        appId: "SEU_APP_ID"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    window.db = db;
+    window.collection = collection;
+    window.addDoc = addDoc;
+    window.serverTimestamp = serverTimestamp;
+</script>
+
+</body>
+</html>
